@@ -1,22 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible combinations of single-digit numbers
- * Return: Always 0 (Success)
+ * main - Prints a hexadecimal string
+ *
+ * Return: Always (Success)
  */
 int main(void)
 {
-	int n;
+	char c;
 
-	for (n = 48; n < 58; n++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		putchar(n);
-		if (n != 57)
-		{
-			putchar(',');
-			putchar(' ');
-		}
+		putchar(c);
 	}
+
+	for (c = 'a'; c <= 'f'; c++)
+	{
+		putchar(c);
+	}
+
 	putchar('\n');
+
 	return (0);
-} 
+}
